@@ -1,52 +1,15 @@
-<!DOCTYPE html>
-<html lang="zh-CN" dropEffect="none" class="no-js ">
-<head>
-<meta charset="utf-8" />
-<title>parallax</title>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<style >
+<!doctype html>
+<html lang="zh-cn">
+	<head>
+		<meta name="description" content="the html5 herald">
+		<meta name="author" content="damonzhao">
+		<link rel="stylesheet" href="css/styles.css?v=1.0">
+		<!-- [if it ie 9] >
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 
-body {
-	margin: 0;
-}
-
-.section1 {
-	background: url(tracks.jpg) no-repeat;
-	background-size: 400px auto;
-	top: 100px;
-	left: 400px;
-}
-
-.section2 {
-	background: url(tree.jpg) no-repeat;
-	background-size: 400px auto;
-	top: 150px;
-	left: 300px;
-}
-
-.section1,
-.section2 {
-	position: absolute;
-	width: 400px;
-	height: 300px;
-}
-</style>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-	window.addEventListener('mousemove', function(event) {
-		var x = window.innerWidth / 2 - event.screenX;
-		var y = window.innerHeight / 2 - event.screenY;
-		var section1 = document.querySelector('.section1');
-		var section2 = document.querySelector('.section2');
-		section1.style.webkitTransform = 'translate(' + x/4 + 'px,' + y/4 +'px)';
-		section2.style.webkitTransform = 'translate(' + x/8 + 'px,' + y/8 +'px)';
-	}, false)
-}, false)
-</script>
-</head>
-<body>
-<div class="section1"></div>
-<div class="section2"></div>
-</body>
-	
+	</head>
+	<body>
+		<script type="text/javascript" src="js/script"></script>
+	</body>
 </html>
