@@ -1,0 +1,44 @@
+<html>
+	
+	<head>
+		<script type="text/javascript">
+			// function add(a,b){
+			//     alert(a+b);
+			// }
+			// function sub(a,b){
+			//     alert(a-b);
+			// }
+			// add.call(sub(3,1),3,1);
+		// function Class1(){
+		//     this.name = "class1";
+		//     this.showName = function(){
+		//         alert(this.name);
+		//     }
+		// }
+		// function Class2(){
+		//     this.name = "class2";
+		// }
+		// var c1 = new Class1();
+		// var c2 = new Class2(); 
+		 
+		// c1.showName.call(c2);//  c2 作为this 对象 
+		function test(callBack){
+			document.getElementById('container').onclick = function(event){
+				callBack(event);
+			};
+		}
+		function load(){
+			test(function(event){
+			console.log(event.target);
+		});
+		}
+			
+		</script>
+	</head>
+	<body onload="load()">
+		<div id="container">
+			<a href="#" class="btn1">click1</a>
+			<a href="#" class="btn2">click2</a>
+		</div>
+	</body>
+</html>
