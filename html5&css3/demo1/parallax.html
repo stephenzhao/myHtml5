@@ -6,15 +6,83 @@
 		<meta name="description" content="the html5 herald">
 		<meta name="author" content="damonzhao">
 		<link rel="stylesheet" href="css/styles.css?v=1.0">
-		<!-- [if it ie 9] >
+		<!-- [if lt ie 9] >
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
+		<style>
+			abc{
+				height: 100px;
+				width: 100px;
+				background: #333;
+				display: block;
+			}
 
+			.triangle {
+				display: block;
+				width: 0;
+				
+			}
+	
+		.tooltip {
+			position: relative;
+			width: 200px;
+			height: 50px;
+			background: gold;
+			-webkit-border-radius: 23px;
+			-moz-border-radius: 23px;
+			border-radius: 23px;
+		}
+
+		.tooltip:after {
+			content: "";
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			margin-left: -5px;
+			border-top: 5px solid gold;
+			border-left: 5px solid transparent;
+			border-right: 5px solid transparent;
+
+			/*background-size: contain cover;*/
+		}
+		</style>
+			<script type="text/javascript" >
+		  window.onload = function() {
+		  	var elem = document.getElementsByTagName('header')[0];
+		  		elem.innerHTML = navigator.userAgent;
+		  }
+		  
+		</script>
 	</head>
 	<body>
-		<script type="text/javascript" src="js/script"></script>
+		<abc>
+			
+			<abbr title="Application">App</abbr>
+		</abc>
+		<header >
+		</header>
+
 		<section>
 			nothing better
 		</section>
+
+		<div class="tooltip">
+			
+		</div>
+		<h1>ur task is in progressing</h1>
+		<p>
+			status: <progress min="0" max="100" value="10">
+				<span>0</span>100%				
+			</progress>
+		</p>
+		<p>Total cuurent disk useage :
+			<meter value="300" min="0" max="320" low="10" height="300" optimum="300" title="gigabites"></meter>
+		</p>
+		<p>
+			
+			dfhasiufhdhfiudsfiusd
+			<b>dsadfopsfipdsfposd</b>
+			fsssssssssssssfdf
+		</p>
 	</body>
 </html>
