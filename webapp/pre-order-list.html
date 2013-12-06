@@ -1,0 +1,65 @@
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">按时间查询预约列表</h3>
+            </div>
+            <div class="panel-body">
+              <form id="query-form" class="form-horizontal">
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">起始时间</label>
+                  <div class="col-sm-5">
+                    <input id="startTime" class="form-control date form_date col-md-3" name="start" size="16" type="text" value="" readonly data-date-format="dd MM yyyy" data-link-field="dtp_input1" data-link-format="yyyy-mm-dd">
+                  </div>
+                </div> 
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">结束时间</label>
+                  <div class="col-sm-5">
+                    <input name="end" id="endTime" class="form-control date form_date col-md-3" size="16" type="text" value="" readonly data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                  </div>
+                </div>  
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">查 询</button>
+                  </div>
+                </div>
+              </form>
+            </div>  
+          </div>  
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">预约列表</h3>
+            </div>  
+            <div class="table-responsive">
+              <table id="pt-list" class="table table-hover">
+                <thead>
+                  <tr>
+                    <th width="10%">年月日</th>
+                    <th width="7%">时间</th>
+                    <th width="7%">地区</th>
+                    <th width="10%">姓名</th>
+                    <th width="13%">电话</th>
+                    <th width="13%">邮箱</th>
+                    <th width="15%">预定类别</th>
+                    <th width="6%">颜色</th>
+                    <th width="22%">预约地址</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>等待信息加载... </td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+            </div>
+            <div id="pagination" class="panel-footer text-center">
+              <!-- <ul class="pagination">
+                <li class="disabled"><a href="#">&laquo;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul> -->
+            </div>
+

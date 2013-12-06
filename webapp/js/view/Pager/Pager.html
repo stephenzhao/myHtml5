@@ -1,0 +1,12 @@
+	<div class="pagination-outer">
+		<ul class="pagination">
+			<li><a id="{{pagerId}}_newest" href="javascript:;">&laquo;</a></li>
+			<li><a id="{{pagerId}}_previous" href="javascript:;">&lt;上一页</a></li>
+			<li class="active"><a id="{{pagerId}}_nowPage">{{currentPage}}</a></li> 
+			<li><a id="{{pagerId}}_next" href="javascript:;">下一页&gt;</a></li>
+			<li><a id="{{pagerId}}_oldest" href="javascript:;">&raquo;</a></li>
+		</ul>
+		<div id="pageShow">
+			<p>第<span class="current-page" id="currentPage">{{currentPage}}</span>页，共<span class="current-page">{{pageCount}}</span>页</p>
+		</div>
+	</div>

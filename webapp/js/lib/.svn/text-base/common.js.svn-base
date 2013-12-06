@@ -1,0 +1,15 @@
+$(function() {
+  // $('#global-header').load('_header.html');
+  
+  // $('#side-nav').load('_nav.html');
+  
+  
+  // 日期选择器
+  $(".form_date").datetimepicker({
+    format: 'yyyy-mm-dd',
+    language: 'zh-CN',
+    autoclose: true,
+    minView: 2
+  });
+  
+})

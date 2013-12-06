@@ -1,0 +1,116 @@
+body {
+  background: #fafafa;
+}
+
+.page-container {
+  position: relative;
+  margin-top: 20px;
+}
+
+/*========================================================================
+  登录
+========================================================================*/
+.sign-in .container {
+  max-width: 400px;
+  margin-top: 100px;
+}
+
+.sign-in .checkbox {
+  font-size: 15px;
+}
+
+.sign-in .checkbox [type=checkbox] {
+  margin-top: 5px;
+}
+
+/*========================================================================
+  全局头
+========================================================================*/
+#global-header {
+  background: #444;
+  color: #fff;
+  height: 50px;
+}
+
+#global-header .container > * {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+#global-header .container .pull-right {
+  font-size: 15px;
+}
+
+#global-header .container a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+#global-header .container a:hover {
+  color: #fff;
+}
+
+/*========================================================================
+  侧边导航
+========================================================================*/
+#side-nav {
+  position: fixed;
+  top: 70px;
+  width: 197px;
+}
+
+@media (min-width: 768px) {
+  #side-nav {
+    width: 197px;
+  }
+}
+
+@media (min-width: 992px) {
+  #side-nav {
+    width: 252px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #side-nav {
+    width: 302px;
+  }
+}
+
+#side-nav .list-group {
+  
+}
+
+#main {
+/*   float: right; */
+/*   width: 70%; */
+/*   background: #fff; */
+}
+
+
+
+.panel .pagination {
+  margin: 4px 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
