@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dropEffect="none" class="no-js ">
+<head>
+<meta charset="utf-8" />
+<title>parallax</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<style >
+html, body , .section1, .section2 {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+.section1 {
+	height: 100px;
+	width: 200px;
+	/*resize: both;*/
+	resize:vertical;
+	overflow: hidden;
+	background:-webkit-linear-gradient(45deg,gold 50%,silver 50%);
+}
+.section2 {
+	height: 100px;
+	width: 200px;
+	resize: both;
+	overflow: hidden;
+	background:linear-gradient(45deg,gold 50%,silver 50%);
+}
+h1{
+	color: #333;
+	-webkit-text-fill-color:transparent;
+	background-image:-webkit-linear-gradient(top,red,blue);
+	-webkit-background-clip:text;
+}
+</style>
+
+</head>
+<body>
+<div class="section1">
+	
+</div>
+<h1>你好</h1>
+<div class="section2"></div>
+<textarea></textarea>
+</body>
+	
+</html>
