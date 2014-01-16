@@ -1,0 +1,14 @@
+{
+  "name": "damon",
+  "version": "0.0.1",
+  "description": "www.getgou.com",
+  "main": "damon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "damon"
+  ],
+  "author": "damon",
+  "license": "BSD"
+}
