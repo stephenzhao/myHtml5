@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8">
+<title>DEMO: 响应式导航（侧面推出）</title>
+<link rel="stylesheet" href="off-canvas-menu.css">
+</head>
+<body>
+
+<div id="outer-wrapper">
+  <div id="inner-wrapper">
+    <header>
+      <div class="inner">
+        <a class="nav-button" href="#nav"></a>
+        <a href="#">
+          <h1 class="logo">logo</h1>
+        </a>
+      </div>
+    </header>
+    <nav id="nav">
+      <input type="text" placeholder="搜索">
+      <a href="#">Home</a>
+      <a href="#">Gallery</a>
+      <a href="#">Products</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="main-wrapper">
+      <section class="main">
+        
+      </section>
+      <section class="secondary">
+        
+      </section>
+  </div>
+  <footer>just for demo</footer>
+  </div>
+</div>
+<script>
+'use strict';
+document.addEventListener('DOMContentLoaded', function() {
+  var navButton = document.querySelector('.nav-button');
+  var nav = document.querySelector('#nav');
+  var navOpen = false;
+  navButton.addEventListener('click', function(event) {
+    document.documentElement.classList.toggle('js-nav');
+    navOpen = !navOpen;
+    event.preventDefault();
+    event.stopPropagation();
+  }, false)
+  
+  document.documentElement.addEventListener('click', function() {
+    if(navOpen) {
+      this.classList.remove('js-nav');
+      navOpen = !navOpen;
+    }
+  }, false)
+  nav.addEventListener('click', function(event) {
+    if(navOpen) {
+      event.stopPropagation();
+    }
+  }, false);
+  
+}, false)
+</script>
+</body>
+</html>
