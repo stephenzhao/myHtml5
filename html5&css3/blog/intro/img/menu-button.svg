@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="424px" height="426px" viewBox="0 0 424 426" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Slice 1</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <rect d="M40.0097385,0 C17.9129701,0 0,17.9022399 0,40.0013123 L0,51.9986877 C0,74.0908024 17.9136727,92 40.0097385,92 L381.990261,92 C404.08703,92 422,74.0977601 422,51.9986877 L422,40.0013123 C422,17.9091976 404.086327,0 381.990261,0 L40.0097385,0 Z M40.0097385,0" id="Rectangle-1" stroke="#979797" fill="#FFFFFF" sketch:type="MSShapeGroup" x="0" y="0" width="422" height="92" rx="40"></rect>
+        <rect d="M40.0097385,167 C17.9129701,167 0,184.90224 0,207.001312 L0,218.998688 C0,241.090802 17.9136727,259 40.0097385,259 L381.990261,259 C404.08703,259 422,241.09776 422,218.998688 L422,207.001312 C422,184.909198 404.086327,167 381.990261,167 L40.0097385,167 Z M40.0097385,167" id="Rectangle-1-copy" stroke="#979797" fill="#FFFFFF" sketch:type="MSShapeGroup" x="0" y="167" width="422" height="92" rx="40"></rect>
+        <rect d="M42.0097385,334 C19.9129701,334 2,351.90224 2,374.001312 L2,385.998688 C2,408.090802 19.9136727,426 42.0097385,426 L383.990261,426 C406.08703,426 424,408.09776 424,385.998688 L424,374.001312 C424,351.909198 406.086327,334 383.990261,334 L42.0097385,334 Z M42.0097385,334" id="Rectangle-1-copy-2" stroke="#979797" fill="#FFFFFF" sketch:type="MSShapeGroup" x="2" y="334" width="422" height="92" rx="40"></rect>
+    </g>
+</svg>
