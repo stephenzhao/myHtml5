@@ -3,7 +3,7 @@
 
 ========================================================================*/
 html {
-  min-width: 1000px;
+ /* min-width: 1000px;*/
 }
 
 html.responsive {
@@ -220,17 +220,105 @@ nav a:hover{
   max-width: 970px;
   margin: 0 auto;
 }
-
+/* 清除浮动 */
 .main-wrapper:after {
   content: "";
   display: table;
   line-height: 0;
   clear: both;
 }
+.nav-button{
+  display: none;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url(../img/menu-button.svg) center center no-repeat;
+  background-size: 24px 24px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+  opacity: 0.75;
+}
+.nav-button:hover {
+  opacity: 0.9;
+}
+section.main,
+section.secondary {
+  height: 480px;
+  border-radius: 10px;
+}
 
+section.main {
+  width: 64%;
+  float: left;
+  background-color: #d2f7b5;
+}
 
+section.secondary {
+  width: 34%;
+  float: right;
+  background: #f9b7c7;
+}
 
-
+footer {
+  background: #e7e7e7;
+  text-align: center;
+  line-height: 40px;
+  font-size: smaller;
+}
+@media screen and (max-width: 767px) {
+  header{
+    position: fixed;
+    width: 100%;
+  }
+  header .inner{
+    text-align: center;
+  }
+  .nav-button{
+    display: block;
+  }
+  h1.logo{
+    float: none;
+  }
+  nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    width: 70%;
+    height: 100%;
+    -webkit-transform: translate3d(-100%, 0, 0);
+     height: 200vh;/*相对于视窗的宽度*/
+    text-align: left;
+    box-shadow: inset -20px 0 10px -10px rgba(0,0,0,0.3);
+  }
+  .js-nav #inner-wrapper {
+    -webkit-transform: translate3d(70%, 0, 0);
+  }
+  nav a {
+    display: block;
+    text-align: left;
+  }
+  
+  nav a + a {
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  
+  nav a:hover {
+    background: #333;
+  }
+  section.main,
+  section.secondary {
+    width: 100%;
+  }
+  
+  section.secondary {
+    margin: 10px 0;
+  }
+  
+  .main-wrapper {
+    padding-top: 50px;
+  }
+}
 
 
 /*========================================================================
