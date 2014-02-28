@@ -1,0 +1,66 @@
+<!-- 仿apple 单页滚动的解决方案 -->
+<!-- 
+最近整理项目的时候 想写一下这个东西，其实所学的h5的东西好像都在这里边了。
+在实现这个之前参考了apple5c的解决方案，
+它的答题思路是，建立一个#main的的box里面把所有要展示的section安排在里面，
+最后设置js设置div#main{-webkit-transform: translate3d(X, Y, Z);}
+这个思路 完美的利用了css3，过渡平滑。
+下面来说说我的思路：
+同样的建立一个#main的box 把里面的section 全部放入div#main中；没有处于active的就display:none;
+当触发事件 驱动显示下一页面的时候 js写一个scroll函数 控制下一个section的top值位当前页面的高度，接下来做的事情就是将top值变成0px;
+就这么简单。
+-->
+<!DOCTYPE html>
+<html class="no-js" lang="zh-cmn-Hans">
+	<head>
+		<meta charset="utf-8">
+		<title>单页滚屏 Demo</title>
+		<link rel="stylesheet" href="global.css">
+	</head>
+	<body>
+		<div id="main">
+			<section class="section">
+				<h1>DEMON</h1>
+				<p>
+					鼠标滚轮或键盘方向键（上下）
+					或点击右侧区块
+				</p>
+			</section>
+			<section class="section">
+				
+			</section>
+			<section class="section">
+				
+			</section>
+		</div>
+		<script src="jquery-1.10.2.min.js"></script>
+		<script src="jquery.mousewheel.js"></script>
+		<script src="modernizr.custom.92426.js"></script>
+
+		<script>
+			$(document).ready(function () {
+				var $main = $("div#main"),
+					$sections=$main.find(".section"),
+					$sections=$('nav li'),
+					active = 0,
+					total = $sections.length;
+				function scroll(dir){
+					var winHeight = $(window).height();
+					var oldActive = active;
+					active = (dir === 'bt')?active + 1 : active - 1;
+					if (active == total) {
+						active=total-1;
+						return false;
+					}
+					if(active<0){
+						active = 0;
+						return false;
+					}
+					$sections.removeClass('active');
+					var $activeSection = $sections.eq(active).addClass('active');
+					$activeSection.css({top: top}).show().stop().animate({top: 0}, 1000);
+				}
+			})
+		</script>
+	</body>
+</html>

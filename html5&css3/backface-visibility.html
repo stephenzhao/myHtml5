@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+	<head>
+		<style>
+			#container{
+				position: relative;
+				border: 1px solid silver;
+				width: 800px;
+				height: 800px;
+				margin: auto;
+			}
+			.box-backface{
+				position: relative;
+				float: left;
+				background:gold;
+				margin:50px;
+				-webkit-animation:haha 4s infinite linear;
+				animation:haha 4s infinite linear;
+			}
+			.show{
+				-webkit-backface-visibility: visible;
+			}
+			.hidden{
+				-webkit-backface-visibility: hidden;
+			}
+			.box-backface{
+				height: 100px;
+				width: 100px;
+			}
+			@-webkit-keyframes haha{
+				0%{
+				-webkit-transform:perspective(300px) rotateX(0deg);
+				}
+				100%{
+				-webkit-transform:perspective(300px) rotateX(360deg);
+				}
+			}
+			@keyframes haha{
+				0%{
+				transform:perspective(300px) rotateX(0deg);
+				}
+				100%{
+				transform:perspective(300px) rotateX(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div class="box-backface show"></div>
+			<div class="box-backface hidden"></div>
+		</div>
+	</body>
+</html>

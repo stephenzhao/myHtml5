@@ -158,6 +158,36 @@ p {
 }
 
 </style>
+</head>
+<body>
+  <nav>
+    <ol>
+      <li>
+        <span class="label">section1</span>
+        <span class="dot"></span>
+      </li>
+      <li>
+        <span class="label">section2</span>
+        <span class="dot"></span>
+      </li>
+      <li>
+        <span class="label">section3</span>
+        <span class="dot"></span>
+      </li>
+    </ol>
+  </nav>
+  <div id="main">
+    <section class="section">
+      <h1>DEMO<br>
+        仿 apple 全屏区域滚动
+      </h1>
+      <p>操作方法：鼠标滚轮或键盘方向键（上下）或点击右侧区块导航</p>
+    </section>
+    <section class="section">
+    </section>
+    <section class="section">
+    </section>
+  </div>
 <script src="jquery-1.10.2.min.js"></script>
 <script src="jquery.mousewheel.js"></script>
 <script src="modernizr.custom.92426.js"></script>
@@ -168,9 +198,9 @@ p {
         $navs = $('nav li'),
         active = 0,
         total = $sections.length;
-    $navs.eq(active).addClass('active');    
-    $sections.not(':first').hide();
-    $sections.eq(active).addClass('active');
+        $navs.eq(active).addClass('active');    
+        $sections.not(':first').hide();
+        $sections.eq(active).addClass('active');
     
     function scroll(dir) {
       var winHeight = $(window).height();
@@ -260,35 +290,5 @@ p {
     })
   })
 </script>
-</head>
-<body>
-  <nav>
-    <ol>
-      <li>
-        <span class="label">section1</span>
-        <span class="dot"></span>
-      </li>
-      <li>
-        <span class="label">section2</span>
-        <span class="dot"></span>
-      </li>
-      <li>
-        <span class="label">section3</span>
-        <span class="dot"></span>
-      </li>
-    </ol>
-  </nav>
-  <div id="main">
-    <section class="section">
-      <h1>DEMO<br>
-        仿 apple 全屏区域滚动
-      </h1>
-      <p>操作方法：鼠标滚轮或键盘方向键（上下）或点击右侧区块导航</p>
-    </section>
-    <section class="section">
-    </section>
-    <section class="section">
-    </section>
-  </div>
 </body>
 </html>
